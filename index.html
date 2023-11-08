@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="form">
+      <div class="column">
+        <label for="day" id="labelDay">DAY</label>
+        <input type="text" name="day" id="day" class="rounded" placeholder="DD">
+        <p style="display: none;" id="errorMsgD">This field is required</p>
+      </div>
+      <div class="column">
+        <label for="month" id="labelMonth">MONTH</label>
+        <input type="text" name="month" id="month" class="rounded" placeholder="MM">
+        <p style="display: none;" id="errorMsgM">This field is required</p>
+      </div><div class="column">
+        <label for="year" id="labelYear">YEAR</label>
+        <input type="text" name="year" id="year" class="rounded" placeholder="YYYY">
+        <p style="display: none;" id="errorMsgY">This field is required</p>
+      </div>
+    </div>
+
+    <div class="line-btn">
+      <div class="line"></div>
+      <button onclick="calculate()"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div class="result">
+      <div class="rowRes" id="yearsText">
+        <h1 class="years purple" id="years">--</h1>
+        <h1 class="text" id="textY">years</h1>
+      </div>
+
+      <div class="rowRes" id="monthText">
+        <h1 class="months purple" id="months">--</h1>
+        <h1 class="text" id="textM">months</h1>
+
+      </div>
+
+      <div class="rowRes">
+        <h1 class="days purple" id="days">--</h1>
+        <h1 class="text" id="textD">days</h1>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
